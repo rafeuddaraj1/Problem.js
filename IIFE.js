@@ -8,3 +8,9 @@ for(var i = 1; i <= 5; i++){
     },1000*n)
 })(i)
 }
+
+for(let x = 0; x <= 5; x++){
+    setTimeout(()=>{
+        console.log(x);
+    },1000*x)
+}
