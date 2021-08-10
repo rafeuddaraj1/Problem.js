@@ -18,3 +18,20 @@ function stringLength5OutPut2(array){
 }
 
 console.log(stringLength5OutPut2(arr));
+
+
+function stringLength5OutPut3(array,lastIndex){
+    if (lastIndex < 0) {
+        return
+    }
+    else{
+        array.forEach((v,i)=>{
+            if (array[i].length === 5) {
+                return array[i]
+            }
+        })
+    }
+    return stringLength5OutPut3(arr,lastIndex-1)
+}
+
+console.log(stringLength5OutPut3(arr,arr.length-1));
